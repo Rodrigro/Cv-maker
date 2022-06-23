@@ -19,3 +19,7 @@ function printDiv(nombreDiv) {
     window.print();
     document.body.innerHTML = contenidoOriginal;
 }
+function Previsualizar(){
+
+
+}
