@@ -1,0 +1,48 @@
+
+ *{
+      margin: 0;
+      padding: 0%;
+      -webkit-print-color-adjust: exact;
+ }
+
+.container {
+  display: grid;
+  grid-template-areas:
+      "nav nav"
+      "imagen header"
+      "sidebar content"
+      "footer footer";
+  grid-template-columns: 2fr 3fr;
+  grid-gap: 20px;
+}
+nav {
+  background-color: rgb(208, 162, 232);
+  grid-area: nav;
+}
+
+header {
+  background-color: rgb(171, 171, 171);
+  grid-area: header;
+}
+
+article {
+  
+  grid-area: content;
+}
+
+aside {
+  background-color: rgb(150, 150, 150);
+  grid-area: sidebar;
+}
+
+footer {
+  margin-top: 30px;
+  height: 100px;
+  background-color: grey;
+  grid-area: footer;
+}
+.botones{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+ }

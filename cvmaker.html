@@ -4,28 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/style.css"  />
+    <link rel="stylesheet" type="text/css" href="./CSS/estilos-impresion.css" media="print" />
 
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
  </head>
   <body>
-    <nav class="navbar navbar-dark bg-primary">
-      
-        <div>
-        <ul>
-            <li>MENU</li>
-            <li>MENU</li>
-            <li>MENU</li>
-            <li>MENU</li>
-            
-        </ul>
-    </div>
-    </nav>
+    
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
     <div id="areaImprimir">
       <div class="container">
-        
+        <imagen>
+          <div class="imagen-perfil">
+            <img
+              src="./IMG/perfil-logo.png"
+              width="100px"
+              height="100px"
+              alt=""
+            />
+          </div>
+        </imagen>
         <header>
           <div contenteditable="true">
             <h1>Coloca tu Nombre</h1>
@@ -33,43 +64,40 @@
 
           
         </header>
+        
         <aside>
-            <div class="imagen-perfil">
-                <img
-                  src="./IMG/perfil-logo.png"
-                  width="100px"
-                  height="100px"
-                  alt=""
-                />
-              </div>
+            
           <div class="datos-personales">
             <div>
-              <h3>Datos Personales</h3>
               <div>
+                <h5><strong>Acerca de tí</strong></h4>
+                <p contenteditable="true">coloca una breve descripcion</p>
+              </div>
+              <h5><strong>Datos Personales</strong></h5>
                 <div>
-                  <h4>Telefono</h4>
+                  <h6>DNI</h6>
                   <p contenteditable="true">Coloca tu numero de contacto</p>
                 </div>
-              </div>
-              <div>
-                <h4>Direccion</h4>
+                 <div>
+                <h6>🏠 Direccion</h6>
                 <p contenteditable="true">Coloca tu Direccion</p>
               </div>
               <div>
-                <h4>Correo</h4>
-                <p contenteditable="true">ingresa tu correo</p>
-              </div>
-              <div>
-                <h4>Ciudad</h4>
+                <h6>📱 Telefono</h6>
                 <p contenteditable="true">localidad</p>
               </div>
+              <div>
+                <h6>📧 Email</h6>
+                <p contenteditable="true">ingresa tu correo</p>
+              </div>
+              
             </div>
           </div>
         </aside>
 
         <article>
           <div>
-            <h3>Experiencia Laboral</h3>
+            <h5>Experiencia Laboral</h5>
             <p contenteditable="true">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Repellendus, ut consequatur a vel nobis doloremque pariatur quas
@@ -78,7 +106,7 @@
             </p>
           </div>
           <div>
-            <h3>Objetivos</h3>
+            <h5>Objetivos</h5>
             <p contenteditable="true">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
               labore placeat provident possimus distinctio quos autem dolore
@@ -96,10 +124,10 @@
 
     <footer>
     <div>
-        <input type="button" value="Add Bloque " id="boton" />
-        <button>Descargar</button><!--TAREA -->
-        <input type="button" onclick="printDiv('areaImprimir')" value="imprimir div" />
-        <button onclick="Previsualizas()">Preview</button>
+        <input class="btn btn-secondary botones" type="button" value="Add Bloque " id="boton" />
+        <button class="btn btn-success botones">Descargar</button><!--TAREA -->
+        <input class="btn btn-primary botones" type="button" onclick="printDiv('areaImprimir')" value="Imprimir" />
+        <button class="botones btn btn-primary" onclick="Previsualizar()">Preview</button>
       </div>
     </footer>
     

@@ -2,14 +2,15 @@
     margin: 0;
     padding: 0%;
 }
+
 .container {
     display: grid;
     grid-template-areas:
         "nav nav"
-        "sidebar header"
+        "imagen header"
         "sidebar content"
         "footer footer";
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 2fr 3fr;
     grid-gap: 20px;
   }
 nav {
@@ -18,21 +19,28 @@ nav {
   }
   
 header {
-    background-color: blueviolet;
+    background-color: rgb(171, 171, 171);
     grid-area: header;
   }
   
 article {
-    background-color: rgb(131, 248, 107);
+    
     grid-area: content;
   }
   
 aside {
-    background-color: aqua;
+    background-color: rgb(150, 150, 150);
     grid-area: sidebar;
   }
   
   footer {
-    background-color: black;
+    margin-top: 30px;
+    height: 100px;
+    background-color: grey;
     grid-area: footer;
   }
+  .botones{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+   }
