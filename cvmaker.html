@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+ </head>
+  <body>
+    <nav class="navbar navbar-dark bg-primary">
+      
+        <div>
+        <ul>
+            <li>MENU</li>
+            <li>MENU</li>
+            <li>MENU</li>
+            <li>MENU</li>
+            
+        </ul>
+    </div>
+    </nav>
+    <div id="areaImprimir">
+      <div class="container">
+        
+        <header>
+          <div contenteditable="true">
+            <h1>Coloca tu Nombre</h1>
+          </div>
+
+          
+        </header>
+        <aside>
+            <div class="imagen-perfil">
+                <img
+                  src="./IMG/perfil-logo.png"
+                  width="100px"
+                  height="100px"
+                  alt=""
+                />
+              </div>
+          <div class="datos-personales">
+            <div>
+              <h3>Datos Personales</h3>
+              <div>
+                <div>
+                  <h4>Telefono</h4>
+                  <p contenteditable="true">Coloca tu numero de contacto</p>
+                </div>
+              </div>
+              <div>
+                <h4>Direccion</h4>
+                <p contenteditable="true">Coloca tu Direccion</p>
+              </div>
+              <div>
+                <h4>Correo</h4>
+                <p contenteditable="true">ingresa tu correo</p>
+              </div>
+              <div>
+                <h4>Ciudad</h4>
+                <p contenteditable="true">localidad</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <article>
+          <div>
+            <h3>Experiencia Laboral</h3>
+            <p contenteditable="true">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repellendus, ut consequatur a vel nobis doloremque pariatur quas
+              expedita excepturi incidunt, soluta et sapiente tenetur vero
+              consectetur quo ea eaque tempore?
+            </p>
+          </div>
+          <div>
+            <h3>Objetivos</h3>
+            <p contenteditable="true">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              labore placeat provident possimus distinctio quos autem dolore
+              laboriosam quibusdam quisquam maiores cupiditate adipisci officia,
+              quasi id temporibus dolorem saepe veritatis?
+            </p>
+          </div>
+          <div contenteditable="true" id="contenido"></div>
+        </article>
+
+      </div>
+    </div>
+
+    <!--BOTONES-->
+
+    <footer>
+    <div>
+        <input type="button" value="Add Bloque " id="boton" />
+        <button>Descargar</button><!--TAREA -->
+        <input type="button" onclick="printDiv('areaImprimir')" value="imprimir div" />
+        <button onclick="Previsualizas()">Preview</button>
+      </div>
+    </footer>
+    
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./JS/script.js"></script>
+      </body>
+</html>
