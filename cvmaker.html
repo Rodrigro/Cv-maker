@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <link rel="stylesheet" type="text/css" href="./CSS/estilos-impresion.css" media="print" />
+
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown link
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="areaImprimir">
+    <div class="container" >
+      <main>
+        <div class="container1">
+          <!-- CARD ELEMENT -->
+          <p><img src="./1131w-TgJfL1kccbg.webp" id="img-preview"></p>
+          <div class="card-footer" id="agregarImagen">
+            <input type="file" id="img-uploader"><br/>
+            <progress id="img-upload-bar" value="0" max="100"></progress>
+          </div>
+        </div>
+
+      </main>
+      <header>
+        <div contenteditable="true">
+          <h1>Coloca tu Nombre</h1>
+        </div>
+      </header>
+
+      <aside>
+        <div class="datos-personales">
+          <div>
+            <!-- <div>
+              <h5><strong>Acerca de tí</strong></h4>
+                <p contenteditable="true">coloca una breve descripcion</p>
+            </div> -->
+            <h5 ><strong>Datos Personales</strong></h5><br/>
+            <div>
+              <h6><img src="./imagenes/licencia-de-conducir.png" width="25px" height="25px"> DNI</h6>
+              <p contenteditable="true">Coloca tu numero de contacto</p>
+            </div>
+            <div>
+              <h6><img src="./imagenes/casa.png" width="25px" height="25px"> Direccion</h6>
+              <p contenteditable="true">Coloca tu Direccion</p>
+            </div>
+            <div>
+              <h6><img src="./imagenes/telefono.png" width="25px" height="25px"> Telefono</h6>
+              <p contenteditable="true">localidad</p>
+            </div>
+            <div>
+              <h6><img src="./imagenes/email.png" width="25px" height="25px"> Email</h6>
+              <p contenteditable="true">ingresa tu correo</p>
+              <h6><img src="./imagenes/calendario.png" width="25px" height="25px"> Fecha de nacimiento</h6>
+              <p contenteditable="true">ingresa fecha</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <article>
+        <div>
+          <h3>Experiencia Laboral</h3>
+          <p contenteditable="true">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Repellendus, ut consequatur a vel nobis doloremque pariatur quas
+            expedita excepturi incidunt, soluta et sapiente tenetur vero
+            consectetur quo ea eaque tempore?
+          </p>
+        </div>
+        <div>
+          <h3>Objetivos</h3>
+          <p contenteditable="true">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            labore placeat provident possimus distinctio quos autem dolore
+            laboriosam quibusdam quisquam maiores cupiditate adipisci officia,
+            quasi id temporibus dolorem saepe veritatis?
+          </p>
+        </div>
+        <div contenteditable="true" id="contenido"></div>
+      </article>
+
+    </div>
+  </div>
+
+  <!--BOTONES-->
+  <button id="eliminar">Aceptar</button>
+  <footer>
+    <div>
+      <input class="btn btn-secondary botones" type="button" value="Add Bloque " id="boton" />
+      <button class="btn btn-success botones">Descargar</button>
+      <!--TAREA -->
+      <input class="btn btn-primary botones" id="imprimir" type="button" onclick="printDiv('areaImprimir')"
+        value="Imprimir" />
+      <button class="botones btn btn-primary" onclick="Previsualizar()">Preview</button>
+    </div>
+  </footer>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+  <script src="./JS/foto-cv.js"></script>
+  <script src="./JS/script.js"></script>
+</body>
+
+</html>
