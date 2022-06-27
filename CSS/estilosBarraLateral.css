@@ -1,6 +1,6 @@
 .azul{
     background-color:  rgba(14,100,157,255);
-    color: black;
+    color: white;
 }
 .verde{
     background-color: green;
@@ -8,5 +8,5 @@
 }
 .marron{
     background-color: chocolate;
-    color: black;
+    color: rgb(254, 254, 254);
 }
