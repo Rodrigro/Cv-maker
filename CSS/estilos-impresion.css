@@ -16,7 +16,7 @@
     "aside content "
     "aside content "
     "aside content ";
-  /* grid-template-columns: 2fr 5fr; */
+  grid-template-columns: 2fr 5fr;
 }
 
 main {

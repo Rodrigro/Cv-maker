@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./CSS/style.css" />
+  <link rel="stylesheet" href="./CSS/estilosBarraLateral.css" />
   <link rel="stylesheet" type="text/css" href="./CSS/estilos-impresion.css" media="print" />
 
   <title>Document</title>
@@ -37,12 +38,12 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown link
+              Selecciona color
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#" id="azul">Azul</a></li>
+              <li><a class="dropdown-item" href="#" id="verde">Verde</a></li>
+              <li><a class="dropdown-item" href="#" id="marron">Marron</a></li>
             </ul>
           </li>
         </ul>
@@ -50,14 +51,17 @@
     </div>
   </nav>
 
-  <div id="areaImprimir">
-    <div class="container" >
-      <main>
+<div class="centrado">
+  <div id="areaImprimir"  >
+    <div class="container" style="border: 2px solid black; height: 29.5cm;width: 21cm;">
+      <main id="barraLateral">
         <div class="container1">
           <!-- CARD ELEMENT -->
-          <p><img src="./1131w-TgJfL1kccbg.webp" id="img-preview"></p>
+          <div class="centrado">
+            <img src="./1131w-TgJfL1kccbg.webp" id="img-preview" class="foto">
+          </div>
           <div class="card-footer" id="agregarImagen">
-            <input type="file" id="img-uploader"><br/>
+            <input type="file" id="img-uploader" style="width: 60%;"><br/>
             <progress id="img-upload-bar" value="0" max="100"></progress>
           </div>
         </div>
@@ -69,7 +73,7 @@
         </div>
       </header>
 
-      <aside>
+      <aside id="barraLateral" style="height: 100%;">
         <div class="datos-personales">
           <div>
             <!-- <div>
@@ -79,7 +83,8 @@
             <h5 ><strong>Datos Personales</strong></h5><br/>
             <div>
               <h6><img src="./imagenes/licencia-de-conducir.png" width="25px" height="25px"> DNI</h6>
-              <p contenteditable="true">Coloca tu numero de contacto</p>
+              <p contenteditable="true" >Coloca tu numero de contacto</p>
+              
             </div>
             <div>
               <h6><img src="./imagenes/casa.png" width="25px" height="25px"> Direccion</h6>
@@ -123,6 +128,7 @@
 
     </div>
   </div>
+</div>
 
   <!--BOTONES-->
   <button id="eliminar">Aceptar</button>
@@ -142,6 +148,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
   </script>
+  <script src="./JS/estilos.js"></script>
   <script src="./JS/foto-cv.js"></script>
   <script src="./JS/script.js"></script>
 </body>

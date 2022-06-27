@@ -5,8 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cv Maker</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+
 </head>
 <body>
-    <h1>Crea tu Cv Online</h1>
+    <button id="Bt-v">cambiar color a verde</button>
+    <button id="Bt-a">cambiar color a azul</button>
+    <button id="Bt-r">cambiar color a rojo</button>
+    <h1 id="h1">Crea tu Cv Online</h1>
+
+    <script>
+        const btnVerde = document.getElementById("Bt-v");
+        const btnAzul = document.getElementById("Bt-a");
+        const btnRojo = document.getElementById("Bt-r");
+        const h1 = document.getElementById("h1");
+
+        btnAzul.addEventListener("click",() =>{
+            h1.classList.remove("rojo", "verde")
+            h1.classList.add("azul")
+        })
+        btnVerde.addEventListener("click",() =>{
+            h1.classList.remove("azul","rojo")
+            h1.classList.add("verde")
+        })
+        btnRojo.addEventListener("click",() =>{
+            h1.classList.remove("azul","verde")
+            h1.classList.add("rojo")
+        })
+    </script>
 </body>
 </html>

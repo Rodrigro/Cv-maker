@@ -9,7 +9,7 @@
 #areaImprimir{
   margin: 0%;
   padding: 0%;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   width: 21cm;
   height: 29.7cm;
   
@@ -21,7 +21,7 @@
         "sidebar content "
         "sidebar content "
         "sidebar content ";
-    /* grid-template-columns: 2fr 5fr; */
+    grid-template-columns: 4fr 5fr;
 }
 nav {
     background-color: rgb(208, 162, 232);
@@ -29,8 +29,7 @@ nav {
 
 }
 main{
-  background-color: rgba(14,100,157,255);
-  
+  background-color: rgb(155, 155, 63);
 }
 header {
     /* background-color: rgb(171, 171, 171); */
@@ -47,9 +46,8 @@ article {
   }
   
 aside {
-    background-color: rgba(14,100,157,255);
     grid-area: sidebar;
-    height: 22.18cm;
+    background-color: rgb(155, 155, 63);
   }
   
   footer {
@@ -64,20 +62,12 @@ aside {
     margin-top: 25px;
 }
 
-.container1 {
-  margin-top: 30px;
-  /* border: 2px solid black; */
-}
-.container1 p{
-  text-align: center;
-}
-.container1 img {
-  margin: 20px;
+.foto{
+  margin: 40px 10px 10px;
   height: 200px;
   width: 200px;
   border-radius: 50%;
   object-fit: cover;
-  /* border: 1px solid black; */
 }
 
 .card-footer {
@@ -97,4 +87,14 @@ h5{
 
 h3 , p{
   margin-left: 25px;
+}
+
+.azul{
+  color: blue;
+}
+.verde{
+  color: green;
+}
+.rojo{
+  color: red;
 }
