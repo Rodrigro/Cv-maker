@@ -1,6 +1,8 @@
 const colorAzul = document.getElementById("azul")
 const colorVerde = document.getElementById("verde")
 const colorMarron = document.getElementById("marron")
+const color = document.getElementById("color")
+const colorTexto = document.getElementById("texto")
 const barraLateral = document.querySelector("main");
 const barraLateral2 = document.querySelector("aside");
 
@@ -21,4 +23,14 @@ colorMarron.addEventListener("click",() =>{
     barraLateral2.classList.remove("verde", "verde")
     barraLateral.classList.add("marron")
     barraLateral2.classList.add("marron")
+})
+
+color.addEventListener("input", ()=>{
+    const valor = color.value
+    barraLateral.style.backgroundColor = valor
+    barraLateral2.style.backgroundColor = valor
+})
+
+colorTexto.addEventListener("click", ()=>{
+    barraLateral2.classList.add("colorBlanco")
 })
